@@ -3,11 +3,35 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    // pet list
+    // pet infor
     <string name="name">Name</string>
     <string name="birth">Birth</string>
     <string name="species">Species</string>
     <string name="submit">Submit</string>
 
+    // pet list
+    <string name="plus">+</string>
+    <string name="title_activity_main_component">MainComponentActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tab_text_1">Overview</string>
+    <string name="tab_text_2">Vaccination</string>
+    <string name="tab_text_3">Note</string>
 
+    // medical book
+    <string name="weight">Weight</string>
+    <string name="length">Length</string>
+    <string name="heart">Heart Beat</string>
+    <string name="vaccination">Vaccination</string>
+    <string name="test">Medical Test</string>
+    <string name="height">Height</string>
+
+    //reminder
+    <string name="remind_meal">Meal Reminders</string>
+    <string name="remind_medical">Medical Reminders</string>
+    <string name="remind_walk">Walking Reminders</string>
+    <string name="remind_meal_switch">Reminders for pet\'s meal</string>
+    <string name="remind_medical_switch">Reminders for daily Medication</string>
+    <string name="remind_walk_switch">Reminds for daily walking</string>
 </resources>

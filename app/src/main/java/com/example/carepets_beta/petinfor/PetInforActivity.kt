@@ -22,8 +22,16 @@ class PetInforActivity : AppCompatActivity() {
         res = PetRepository(application)
         var name: String = binding.editName.toString()
         var species: String = binding.editSpecies.toString()
+        var birth: String = ""
+        binding.editBirth.setOnClickListener {view: View ->
+            birth = takeDate(view)
+        }
+        binding.btnSubmit.setOnClickListener {
+//            res.insert(name, img, birth, species)
+
+        }
     }
-    private fun takeDate(view: View) {
+    private fun takeDate(view: View): String {
         var calendar = Calendar.getInstance()
         var year = calendar.get(Calendar.YEAR)
         var month = calendar.get(Calendar.MONTH)
@@ -32,5 +40,7 @@ class PetInforActivity : AppCompatActivity() {
             binding.editBirth.text = "$day/${month+1}/$year"
         }, year, month, day)
             .show()
+        return "$day/${month+1}/$year"
     }
+
 }

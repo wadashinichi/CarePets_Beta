@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".maincontent.reminder.NotificationsFragment"
+    android:layout_margin="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewMeal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgMeal"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_launcher_background"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_meal"
+                android:drawablePadding="15dp"
+                android:text="@string/remind_meal"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switchMeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="15dp"
+                android:text="@string/remind_meal_switch"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewWalk"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgWalk"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_launcher_background"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_walk"
+                android:drawablePadding="15dp"
+                android:text="@string/remind_walk"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Switch
+                android:id="@+id/switchWalk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/remind_walk_switch" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewMedication"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgMedication"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_launcher_background"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_medication"
+                android:drawablePadding="15dp"
+                android:text="@string/remind_medical"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switchMedication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/remind_medical_switch" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

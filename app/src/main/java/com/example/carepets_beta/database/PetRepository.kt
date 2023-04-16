@@ -11,4 +11,6 @@ class PetRepository(var application: Application) {
         db.petDao().insertPet(name, img, birth, species)
     }
     fun getCount(): Int = db.petDao().getPetCount()
+
+    fun getAll(): List<Pet> = db.petDao().getAll()
 }

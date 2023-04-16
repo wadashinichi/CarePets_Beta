@@ -12,7 +12,11 @@
         android:theme="@style/Theme.CarePets_Beta"
         tools:targetApi="31">
         <activity
-            android:name=".PetInforActivity"
+            android:name=".maincontent.MainComponentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main_component" />
+        <activity
+            android:name=".petinfor.PetInforActivity"
             android:exported="false" />
         <activity
             android:name=".petlist.PetListActivity"
@@ -22,7 +26,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
