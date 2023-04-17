@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_medical_book" />
     <fragment
         android:id="@+id/notificationsFragment"
-        android:name="com.example.carepets_beta.maincontent.reminder.NotificationsFragment"
+        android:name="com.example.carepets_beta.maincontent.reminder.ReminderFragment"
         android:label="fragment_notifications"
         tools:layout="@layout/fragment_reminder" />
 </navigation>
